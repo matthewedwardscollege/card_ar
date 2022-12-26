@@ -6,7 +6,7 @@
 
 ## Try out CardAR for yourself:
 
-By clicking on the following link you will be able to run CardAR for yourself in your browser. (Please note that brighter lighting conditions generally yeild better results.)
+By clicking on the following link you will be able to run CardAR for yourself in your browser. (Please note that brighter lighting conditions generally yield better results.)
 
 https://matthewedwardscollege.github.io/card_ar/card_ar_6/
 
