@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card AR</title>
+	<style>
+		#start {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			font-size: 2em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #000;
+			color: #fff;
+			font-family: arial;
+		}
+		#main-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 100vh;
+			display: flex;
+			background-color: #000;
+			font-family: arial;
+			color: #fff;
+		}
+		#video-wrapper {
+			overflow: hidden;
+			width: 70%;
+			position: relative;
+		}
+		#main-canvas {
+			position: absolute;
+		}
+		#sidebar {
+			flex: 1;
+			background-color: rgb(60, 60, 60);
+			overflow-x: hidden;
+			word-break: break-word;
+		}
+		.section {
+			margin: 1em;
+		}
+		.section-title {
+			font-size: 1.25em;
+		}
+		.section-content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.section > hr {
+			width: 100%;
+		}
+		#status {
+			font-weight: bold;
+			height: 30vh;
+			width: 100%;
+			overflow: scroll;
+		}
+		#status-content {
+			font-weight: normal;
+		}
+	</style>
+	<script src="https://unpkg.com/tesseract.js@v2.0.2/dist/tesseract.min.js"></script>
+	<script src="js/get_simularity.js"></script>
+	<script src="js/card_ar.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div id="start">
+		<span>Click to Start</span>
+	</div>
+	<div id="main-content" style="display: none;">
+		<div id="video-wrapper">
+			<canvas id="main-canvas"></canvas>
+		</div>
+		<div id="sidebar">
+			<div class="section">
+				<div class="section-title">Settings</div>
+				<div class="section-content">
+					<button id="toggle-rotation-switch"></button>
+					<button id="toggle-ocr-persistance-switch"></button>
+					<button id="toggle-image-mirroring-switch"></button>
+					<button id="toggle-bounds-switch"></button>
+					<button id="correct-brightness-btn">Correct Brightness</button>
+				</div>
+				<hr>
+			</div>
+			<div class="section">
+				<div class="section-title">Status</div>
+				<div class="section-content">
+					<div id="status">CardAR Status JSON: <span id="status-content"></span></div>
+				</div>
+				<hr>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
