@@ -58,7 +58,7 @@ Example of the output of CardAR after it recognizes a card:
 <img style="width: 60%;" src="https://github.com/matthewedwardscollege/card_ar/blob/main/card_ar_screenshots/superimposed.png">
 </p>
 
-Example of how SFFA (Sobel Flood FIll Algorithm) detects objects in an image:
+Example of how SFFA (Sobel Flood Fill Algorithm) detects objects in an image:
 
 <p align="center">
 <img style="width: 60%;" src="https://github.com/matthewedwardscollege/card_ar/blob/main/card_ar_screenshots/superimposed_with_bounds.png">
